@@ -5,7 +5,7 @@ const theme = extendTheme({
   colors: {
     brand: {
         //navpink
-      100: "#FFF5F7",
+      100: "#E1BEE7",
       200: "#A19F9D",
       300:'#00E5FF'
       

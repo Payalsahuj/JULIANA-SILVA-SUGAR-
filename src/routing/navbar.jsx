@@ -55,7 +55,7 @@ import {
 
 
   function Navbar(){
-    return (<WithSubnavigation/>)
+    return (<WithSubnavigation />)
   }
   
   function WithSubnavigation() {
@@ -66,7 +66,7 @@ import {
     const value=useContext(Authcontext)
     let {theme,settingtheme}=value
     return (
-      <Box  position={"relative"}>
+      <Box  position={"relative"} border={theme?'1px solid white':'1px solid pink'}>
         
         <Uppernav/>
          
@@ -170,7 +170,7 @@ import {
                 <Image src={theme?darklogo:v} w="130px" h="90px" alt='logo' />
                 </Box>
                 <Box  w="40%">
-            <Flex border={"2px solid grey"}  display={{base:'none',md:'flex', lg:'flex'}} borderRadius="14px" padding="5px 10px" >
+            <Flex border={theme?'1px solid white':'2px solid white'}  display={{base:'none',md:'flex', lg:'flex'}} borderRadius="14px" padding="5px 10px" >
             <Input placeholder='Search products' focusBorderColor='brand.100' border={"none"} size='sm' />Search</Flex></Box>
             
 
