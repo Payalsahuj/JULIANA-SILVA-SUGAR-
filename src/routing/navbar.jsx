@@ -167,11 +167,12 @@ import {
           
           align={'center'}>
             <Box>
-                <Image src={theme?darklogo:v} w="130px" h="90px" alt='logo' />
-                </Box>
-                <Box  w="40%">
-            <Flex border={theme?'1px solid white':'2px solid white'}  display={{base:'none',md:'flex', lg:'flex'}} borderRadius="14px" padding="5px 10px" >
-            <Input placeholder='Search products' focusBorderColor='brand.100' border={"none"} size='sm' />Search</Flex></Box>
+                <Image src={theme?darklogo:v} w={{base:'90px',md:'100px', lg:'130px'}} h={{base:'50px',md:'70px', lg:'90px'}} alt='logo' />
+            </Box>
+            <Box  w="40%">
+            <Flex border={theme?'1px solid white':'2px solid white'}  display={{base:'none',md:'flex', lg:'flex'}} borderRadius="14px" padding="5px 10px" color={theme?'white':'black'} >
+            <Input placeholder='Search products' focusBorderColor='brand.100' style={{ color:'black'}} border={"none"} size='sm' />< Image src={theme?darksearch:lightsearch} w="25px" h='24px' paddingTop={'5px'} paddingRight='5px' alt=''/>Search</Flex>
+            </Box>
             
 
             {/* <Box   display={{base:'flex',md:'none', lg:'none'}}  >
