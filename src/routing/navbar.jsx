@@ -51,7 +51,7 @@ import {
   import lightsearch from "../Image/lightsearch.png"
   import {Authcontext} from "../authcontext/authcontext"
   import { useContext } from 'react';
-
+  import { useNavigate } from "react-router-dom";
 
 
   function Navbar(){
@@ -151,7 +151,10 @@ import {
 
     const value=useContext(Authcontext)
     let {theme,settingtheme}=value
-    
+    const navigate=useNavigate()
+    function handellogo(){
+       navigate('/')     
+    }
     return (
       <Flex
       bg={theme?'black':'brand.100'} color={theme?'white':'brand.100'}
@@ -167,7 +170,7 @@ import {
           
           align={'center'}>
             <Box>
-                <Image src={theme?darklogo:v} w={{base:'90px',md:'100px', lg:'130px'}} h={{base:'50px',md:'70px', lg:'90px'}} alt='logo' />
+               <button onClick={handellogo}> <Image src={theme?darklogo:v} w={{base:'90px',md:'100px', lg:'130px'}} h={{base:'50px',md:'70px', lg:'90px'}} alt='logo' /></button>
             </Box>
             <Box  w="40%">
             <Flex border={theme?'1px solid white':'2px solid white'}  display={{base:'none',md:'flex', lg:'flex'}} borderRadius="14px" padding="5px 10px" color={theme?'white':'black'} >
@@ -232,8 +235,11 @@ import {
   }
   
   const DesktopNav = () => {
-    const linkColor = useColorModeValue('gray.600', 'gray.200');
-    const linkHoverColor = useColorModeValue('gray.800', 'white');
+    
+    const value=useContext(Authcontext)
+    let {theme,settingtheme}=value
+    const linkColor = useColorModeValue(theme?'white':'black', '#BDBDBD');
+    const linkHoverColor = useColorModeValue('#BDBDBD', '#BDBDBD');
     const popoverContentBgColor = useColorModeValue('white', 'gray.800');
   
     return (
@@ -386,12 +392,12 @@ import {
         {
           label: 'LIPSTICKS',
           subLabel: ['TRANSFER PROOF LIPSTICKS','MATTE LIPSTICKS','LIQUID LIPSTICKS','CRAYONLIPSTICKS','POWDER LIPSTICKS','SATIN LIPSTICKS','BULLET LIPSTICKS','LIP GLOSS & LINERS'],
-          href: '#',
+          href: '/product',
         },
         {
           label: 'New & Noteworthy',
           subLabel: ['LIPSTICK FIXERS & REMOVERS','LIP PRIMERS & SCRUBS','LIP BALMS'],
-          href: '#',
+          href: '/product',
         },
         
       ],
@@ -458,7 +464,7 @@ import {
           {
             label:'MISTS & HYDRATING STICKS',
             subLabel:['FACE MISTS','COOLING STICKS'],
-            href:'',
+            href:'#',
           }
         ],
       },
