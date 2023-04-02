@@ -52,7 +52,8 @@ import {
   import {Authcontext} from "../authcontext/authcontext"
   import { useContext } from 'react';
   import { useNavigate } from "react-router-dom";
-
+  import Signup from "../component/Signup.jsx"
+  import Signin from "../component/Signin.jsx"
 
   function Navbar(){
     return (<WithSubnavigation />)
@@ -65,6 +66,9 @@ import {
     
     const value=useContext(Authcontext)
     let {theme,settingtheme}=value
+    function handelsignup(){
+      return <Signup/>   
+   }
     return (
       <Box  position={"relative"} border={theme?'1px solid white':'1px solid pink'}>
         
@@ -112,27 +116,29 @@ import {
             justify={'flex-end'}
             direction={'row'}
             spacing={6}>
-            <Button
+            {/* <Button
               as={'a'}
               fontSize={'sm'}
               fontWeight={400}
               variant={'link'}
               href={'#'}>
               Sign In
-            </Button>
-            <Button
+            </Button> */}
+            <Signin/>
+            {/* <Button
               as={'a'}
               display={{ base: 'none', md: 'inline-flex' }}
               fontSize={'sm'}
               fontWeight={600}
               color={'white'}
               bg={'pink.400'}
-              href={'#'}
+              
               _hover={{
                 bg: 'pink.300',
-              }}>
+              }} onClick={handelsignup}>
               Sign Up
-            </Button>
+            </Button> */}
+            <Signup/>
           </Stack>
         </Flex>
   
@@ -224,7 +230,7 @@ import {
 
             <Image w="40px" src={theme?darkfav:lightfav} alt=''/>
             
-            <Image w="40px" src={theme?darkbag:lightbag} alt=''/>
+            <Link to='/bag'><Image w="40px" src={theme?darkbag:lightbag} alt=''/></Link>
             
             <Image w="40px" src={theme?darkadmin:lightadmin} alt=''/>
             </Flex>
