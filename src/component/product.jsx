@@ -12,13 +12,13 @@ import { Card, CardBody, CardFooter, ButtonGroup, Button, Heading, Text, Image, 
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-function getdata(page, order, filter) {
+function getdata(page, order, filter, type) {
   if (order === "" && filter === "") {
     return axios.get(`http://localhost:8080/lipstick`, {
       params: {
         _page: page,
         _limit: 6,
-       
+
       }
     })
   }
@@ -34,31 +34,116 @@ function getdata(page, order, filter) {
   }
 
   if (order === "" && filter !== "") {
-    let arr = []
-    return fetch(`http://localhost:8080/lipstick?_limit=6&_page=${page}`)
-    .then((res)=>res.json())
-    .then((data)=>{
-      data.forEach((item)=>{
-        for(let x=0;x<=filter.length-1;x++){
-          if(item.type.includes(filter[x])){
-            arr.push(item.id)
-          }
-        }
-        
-      })
-      let filterdata=data.filter((item)=>{
-        
-          if(arr.includes(item.id)){
-            return true
-          }
-          else{
-            return false
-          }
-        
-      })
-      return({data:filterdata})
-    })
+    if (type === "type") {
+      let arr = []
+      return fetch(`http://localhost:8080/lipstick?_limit=6&_page=${page}`)
+        .then((res) => res.json())
+        .then((data) => {
+          data.forEach((item) => {
+            for (let x = 0; x <= filter.length - 1; x++) {
+              if (item.type.includes(filter[x])) {
+                arr.push(item.id)
+              }
+            }
+
+          })
+          let filterdata = data.filter((item) => {
+
+            if (arr.includes(item.id)) {
+              return true
+            }
+            else {
+              return false
+            }
+
+          })
+          return ({ data: filterdata })
+        })
+    }
+    else if(type==="feature"){
+      let arr = []
+      return fetch(`http://localhost:8080/lipstick?_limit=6&_page=${page}`)
+        .then((res) => res.json())
+        .then((data) => {
+          data.forEach((item) => {
+            for (let x = 0; x <= filter.length - 1; x++) {
+              if (item.feature.includes(filter[x])) {
+                arr.push(item.id)
+              }
+            }
+
+          })
+          let filterdata = data.filter((item) => {
+
+            if (arr.includes(item.id)) {
+              return true
+            }
+            else {
+              return false
+            }
+
+          })
+          return ({ data: filterdata })
+        })
+    }
+    else if(type==="finish"){
+      let arr = []
+      return fetch(`http://localhost:8080/lipstick?_limit=6&_page=${page}`)
+        .then((res) => res.json())
+        .then((data) => {
+          data.forEach((item) => {
+            for (let x = 0; x <= filter.length - 1; x++) {
+              if (item.finish.includes(filter[x])) {
+                arr.push(item.id)
+              }
+            }
+
+          })
+         
+          let filterdata = data.filter((item) => {
+
+            if (arr.includes(item.id)) {
+              return true
+            }
+            else {
+              return false
+            }
+
+          })
+          return ({ data: filterdata })
+        })
+    }
+    else if(type==="formulation"){
+      let arr = []
+      return fetch(`http://localhost:8080/lipstick?_limit=6&_page=${page}`)
+        .then((res) => res.json())
+        .then((data) => {
+          data.forEach((item) => {
+            for (let x = 0; x <= filter.length - 1; x++) {
+              if (item.formulation.includes(filter[x])) {
+                arr.push(item.id)
+              }
+            }
+
+          })
+         
+          let filterdata = data.filter((item) => {
+
+            if (arr.includes(item.id)) {
+              return true
+            }
+            else {
+              return false
+            }
+
+          })
+          return ({ data: filterdata })
+        })
+    }
+
+
   }
+
 
 }
 
@@ -70,7 +155,7 @@ const reducer = (state, action) => {
     case "hightolow": {
       return state = action.payload
     }
-    
+
     default: throw new Error('Something wrong')
   }
 }
@@ -82,17 +167,18 @@ function Product() {
   const [order, setorder] = useState("")
   const [page, setpage] = useState(1)
   const [filter, setfilter] = useState("")
-  const [totalpage,settotalpage]=useState(0)
+  const [totalpage, settotalpage] = useState(0)
+  const [type, settype] = useState("")
   const fetchandrender = async (page, order, filter) => {
     try {
-      let data = await getdata(page, order, filter)
-      if(filter===""){
+      let data = await getdata(page, order, filter, type)
+      if (filter === "") {
         settotalpage(data.headers["x-total-count"])
       }
-      else{
+      else {
         settotalpage(data.data.length)
       }
-      
+
       dispatch({ type: 'getdata', payload: data.data })
 
     }
@@ -117,6 +203,7 @@ function Product() {
     fetchandrender(page, order, filter)
   }
   function handelcheckboxtype(e) {
+    settype("type")
     if (e.target.checked) {
       setfilter([...filter, e.target.name])
 
@@ -129,14 +216,70 @@ function Product() {
         return false
       })
       setfilter(arr)
+      if (arr.length === 0) {
+        setfilter("")
+      }
     }
   }
 
-  function handelcheckboxfeature(e){
-
+  function handelcheckboxfeature(e) {
+    settype("feature")
+    if (e.target.checked) {
+      setfilter([...filter, e.target.name])
+    }
+    else {
+      let arr = filter.filter((item) => {
+        if (item !== e.target.name) {
+          return true
+        }
+        return false
+      })
+      setfilter(arr)
+      if (arr.length === 0) {
+        setfilter("")
+      }
+    }
   }
- 
+
+  function handelcheckboxfinish(e){
+    settype("finish")
+    if (e.target.checked) {
+      setfilter([...filter, e.target.name])
+    }
+    else {
+      let arr = filter.filter((item) => {
+        if (item !== e.target.name) {
+          return true
+        }
+        return false
+      })
+      setfilter(arr)
+      if (arr.length === 0) {
+        setfilter("")
+      }
+    }
+  }
+
+  function handelcheckboxformulation(e){
+    settype("formulation")
+    if (e.target.checked) {
+      setfilter([...filter, e.target.name])
+    }
+    else {
+      let arr = filter.filter((item) => {
+        if (item !== e.target.name) {
+          return true
+        }
+        return false
+      })
+      setfilter(arr)
+      if (arr.length === 0) {
+        setfilter("")
+      }
+    }
+  }
   
+
   return (
     <div style={{ backgroundColor: theme ? 'black' : '#ECEFF1' }}>
       <div><img style={{ display: 'block', height: '300px', width: '100%' }} src="https://sugar-mobile-application.s3.amazonaws.com/collection-web-banner/Lips.jpg" alt="" />
@@ -218,12 +361,12 @@ function Product() {
                 </h2>
                 <AccordionPanel pb={4} style={{ display: 'flex', flexDirection: 'column' }}>
                   <label><input type="checkbox" style={{ marginRight: '20px' }} onChange={(e) => handelcheckboxfeature(e)} name='crayon' />Crayon</label>
-                  <label><input type="checkbox" style={{ marginRight: '20px' }} onChange={(e) => handelcheckboxfeature(e)} name='long lasting'  />
+                  <label><input type="checkbox" style={{ marginRight: '20px' }} onChange={(e) => handelcheckboxfeature(e)} name='long lasting' />
                     Long Lasting</label>
                   <label><input type="checkbox" style={{ marginRight: '20px' }} onChange={(e) => handelcheckboxfeature(e)} name='smudge proof' />Smudge Proof</label>
                   <label><input type="checkbox" style={{ marginRight: '20px' }} onChange={(e) => handelcheckboxfeature(e)} name='waterproof' />Waterproof</label>
                   <label><input type="checkbox" style={{ marginRight: '20px' }} onChange={(e) => handelcheckboxfeature(e)} name='liquid' />Liquid</label>
-                  <label><input type="checkbox" style={{ marginRight: '20px' }} onChange={(e) => handelcheckboxfeature(e)} name='lip primer'  />Lip Primer</label>
+                  <label><input type="checkbox" style={{ marginRight: '20px' }} onChange={(e) => handelcheckboxfeature(e)} name='lip primer' />Lip Primer</label>
 
 
                 </AccordionPanel>
@@ -239,8 +382,8 @@ function Product() {
                   </AccordionButton>
                 </h2>
                 <AccordionPanel pb={4} style={{ display: 'flex', flexDirection: 'column' }}>
-                  <label><input type="checkbox" style={{ marginRight: '20px' }} />Matte</label>
-                  <label><input type="checkbox" style={{ marginRight: '20px' }} />Gloss</label>
+                  <label><input type="checkbox" style={{ marginRight: '20px' }} onChange={(e) => handelcheckboxfinish(e)} name='matte'/>Matte</label>
+                  <label><input type="checkbox" style={{ marginRight: '20px' }} onChange={(e) => handelcheckboxfinish(e)} name='gloss'/>Gloss</label>
 
 
                 </AccordionPanel>
@@ -256,10 +399,10 @@ function Product() {
                   </AccordionButton>
                 </h2>
                 <AccordionPanel pb={4} style={{ display: 'flex', flexDirection: 'column' }}>
-                  <label><input type="checkbox" style={{ marginRight: '20px' }} />Crayon</label>
-                  <label><input type="checkbox" style={{ marginRight: '20px' }} />Liquid</label>
-                  <label><input type="checkbox" style={{ marginRight: '20px' }} />Bullet</label>
-                  <label><input type="checkbox" style={{ marginRight: '20px' }} />Matte</label>
+                  <label><input type="checkbox" style={{ marginRight: '20px' }} onChange={(e) => handelcheckboxformulation(e)} name='crayon' />Crayon</label>
+                  <label><input type="checkbox" style={{ marginRight: '20px' }} onChange={(e) => handelcheckboxformulation(e)} name='liquid'/>Liquid</label>
+                  <label><input type="checkbox" style={{ marginRight: '20px' }} onChange={(e) => handelcheckboxformulation(e)} name='bullet'/>Bullet</label>
+                  <label><input type="checkbox" style={{ marginRight: '20px' }} onChange={(e) => handelcheckboxformulation(e)} name='matte'/>Matte</label>
 
 
                 </AccordionPanel>
@@ -273,9 +416,9 @@ function Product() {
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '35px', width: '80%', padding: '17px 10px', marginBottom: '60px' }}>
           {state.map((item) =>
-            
-              <Card maxW='300px' key={item.id} style={{ border: theme ? '1px solid #E1F5FE' : '', boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px', borderRadius: '15px', backgroundColor: theme ? 'black' : 'white', color: theme ? 'white' : 'blue' }}>
-                <Link to={`/product/${item.id}`}>
+
+            <Card maxW='300px' key={item.id} style={{ border: theme ? '1px solid #E1F5FE' : '', boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px', borderRadius: '15px', backgroundColor: theme ? 'black' : 'white', color: theme ? 'white' : 'blue' }}>
+              <Link to={`/product/${item.id}`}>
                 <CardBody >
                   <Image
                     src={item.image}
@@ -293,27 +436,27 @@ function Product() {
                     </Text>
                   </Stack>
                 </CardBody>
-                </Link>
-                <Divider />
-                <CardFooter>
-                  <ButtonGroup spacing='2' style={{margin:'auto'}}>
-                    <Button variant='solid' colorScheme='pink'>
-                      Buy now
-                    </Button>
-                    <Button variant='solid' colorScheme='blue'>
-                      Add to cart
-                    </Button>
-                  </ButtonGroup>
-                </CardFooter>
-              </Card>
-            
+              </Link>
+              <Divider />
+              <CardFooter>
+                <ButtonGroup spacing='2' style={{ margin: 'auto' }}>
+                  <Button variant='solid' colorScheme='pink'>
+                    Buy now
+                  </Button>
+                  <Button variant='solid' colorScheme='blue'>
+                    Add to cart
+                  </Button>
+                </ButtonGroup>
+              </CardFooter>
+            </Card>
+
           )}
         </div>
       </div>
-      <div style={{display:"flex",justifyContent:'center',alignItems:'center',gap:'10px',paddingBottom:'30px'}}>
-          <button disabled={page===1} onClick={()=>setpage(page-1)} style={{backgroundColor:'#4299E1',padding:'5px 20px',color:'white',borderRadius:'7px'}}>{"<<  Prev"}</button>
-        <p style={{backgroundColor:'#D53F8C',padding:'5px 20px',color:'white',borderRadius:'7px'}}>Page: {page}</p>
-        <button disabled={page===Math.ceil(totalpage/4)} onClick={()=>setpage(page+1)}style={{backgroundColor:'#4299E1',padding:'5px 20px',color:'white',borderRadius:'7px'}}>{"Next  >>"}</button></div>
+      <div style={{ display: "flex", justifyContent: 'center', alignItems: 'center', gap: '10px', paddingBottom: '30px' }}>
+        <button disabled={page === 1} onClick={() => setpage(page - 1)} style={{ backgroundColor: '#4299E1', padding: '5px 20px', color: 'white', borderRadius: '7px' }}>{"<<  Prev"}</button>
+        <p style={{ backgroundColor: '#D53F8C', padding: '5px 20px', color: 'white', borderRadius: '7px' }}>Page: {page}</p>
+        <button disabled={page === Math.ceil(totalpage / 4)} onClick={() => setpage(page + 1)} style={{ backgroundColor: '#4299E1', padding: '5px 20px', color: 'white', borderRadius: '7px' }}>{"Next  >>"}</button></div>
     </div>
   )
 }
