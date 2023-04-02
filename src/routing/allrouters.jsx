@@ -1,8 +1,8 @@
 import { Route,Routes } from "react-router-dom"
 import Landpage from "../component/landpage"
-import Addtobag from "../component/addtobag"
+import Bag from "../component/Bag"
 import Admin from "../component/admin"
-import Login from "../component/login"
+import Signup from "../component/Signup"
 import Wishlist from "../component/wishlist"
 import Product from "../component/product"
 import Singlepage from "../component/singlepage"
@@ -13,9 +13,9 @@ function Allrouter(){
             <Route path="/" element={<Landpage/>}/>
             <Route path='/product' element={<Product/>}/>
             <Route path='/product/:id' element={<Singlepage/>}/>
-            <Route path="/addtobag" element={<Addtobag/>}/>
+            <Route path="/bag" element={<Bag/>}/>
             <Route path="/admin" element={<Admin/>}/>
-            <Route path="/login" element={<Login/>}/>
+            <Route path="/signup" element={<Signup/>}/>
             <Route path="/wishlist" element={<Wishlist/>}/>
         </Routes>
     )

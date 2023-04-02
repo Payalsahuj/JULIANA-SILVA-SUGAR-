@@ -21,7 +21,7 @@ import darkqual from "../Image/darkqual.png"
 import lightqual from "../Image/lightqual.png"
 import darkreturn from "../Image/darkreturn.png"
 import lightreturn from "../Image/lightreturn.png"
-
+import wish from '../Image/wish.png'
 
 function getdata(id){
     return fetch(`http://localhost:8080/lipstick/${id}`)
@@ -98,8 +98,8 @@ function Singlepage() {
                 </div>
 
                 <div style={{ margin: '20px 0px' }}>
-                    <Button style={{ backgroundColor: '#4299E1', color: 'white',boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px' }}>FAV</Button>
-                    <Button style={{ marginLeft: '10px', backgroundColor:'#D53F8C', color: theme?'white':'white',boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px' }} >ADD TO BAG</Button>
+                    <Button style={{ backgroundColor: '#D53F8C', color: 'white',boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px' }}>  <img style={{display:'block',width:'20px'}} src={wish} alt="" /></Button>
+                    <Button style={{ marginLeft: '10px', backgroundColor:'#4299E1', color: theme?'white':'white',boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px' }} >ADD TO BAG</Button>
                 </div>
                 <Center height='20px'>
                     <Divider orientation='horizontal' />

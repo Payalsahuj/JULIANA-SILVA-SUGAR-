@@ -11,6 +11,7 @@ import {
 import { Card, CardBody, CardFooter, ButtonGroup, Button, Heading, Text, Image, Stack, Divider } from '@chakra-ui/react'
 import axios from "axios";
 import { Link } from "react-router-dom";
+import wish from "../Image/wish.png"
 
 function getdata(page, order, filter, type) {
   if (order === "" && filter === "") {
@@ -169,6 +170,7 @@ function Product() {
   const [filter, setfilter] = useState("")
   const [totalpage, settotalpage] = useState(0)
   const [type, settype] = useState("")
+  const [cart,setcart]=useState([])
   const fetchandrender = async (page, order, filter) => {
     try {
       let data = await getdata(page, order, filter, type)
@@ -279,6 +281,11 @@ function Product() {
     }
   }
   
+  function handelcart(item){
+    
+  
+    
+  }
 
   return (
     <div style={{ backgroundColor: theme ? 'black' : '#ECEFF1' }}>
@@ -441,9 +448,9 @@ function Product() {
               <CardFooter>
                 <ButtonGroup spacing='2' style={{ margin: 'auto' }}>
                   <Button variant='solid' colorScheme='pink'>
-                    Buy now
+                    <img style={{display:'block',width:'20px'}} src={wish} alt="" />
                   </Button>
-                  <Button variant='solid' colorScheme='blue'>
+                  <Button variant='solid' colorScheme='blue' onClick={()=>handelcart(item)}>
                     Add to cart
                   </Button>
                 </ButtonGroup>
