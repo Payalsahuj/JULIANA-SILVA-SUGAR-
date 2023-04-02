@@ -15,7 +15,7 @@ import wish from "../Image/wish.png"
 
 function getdata(page, order, filter, type) {
   if (order === "" && filter === "") {
-    return axios.get(`http://localhost:8080/lipstick`, {
+    return axios.get(`https://expensive-flannel-shirt-calf.cyclic.app/lipstick`, {
       params: {
         _page: page,
         _limit: 6,
@@ -24,7 +24,7 @@ function getdata(page, order, filter, type) {
     })
   }
   if (order !== "" && filter === "") {
-    return axios.get(`http://localhost:8080/lipstick`, {
+    return axios.get(`https://expensive-flannel-shirt-calf.cyclic.app/lipstick`, {
       params: {
         _page: page,
         _limit: 6,
@@ -37,7 +37,7 @@ function getdata(page, order, filter, type) {
   if (order === "" && filter !== "") {
     if (type === "type") {
       let arr = []
-      return fetch(`http://localhost:8080/lipstick?_limit=6&_page=${page}`)
+      return fetch(`https://expensive-flannel-shirt-calf.cyclic.app/lipstick?_limit=6&_page=${page}`)
         .then((res) => res.json())
         .then((data) => {
           data.forEach((item) => {
@@ -63,7 +63,7 @@ function getdata(page, order, filter, type) {
     }
     else if(type==="feature"){
       let arr = []
-      return fetch(`http://localhost:8080/lipstick?_limit=6&_page=${page}`)
+      return fetch(`https://expensive-flannel-shirt-calf.cyclic.app/lipstick?_limit=6&_page=${page}`)
         .then((res) => res.json())
         .then((data) => {
           data.forEach((item) => {
@@ -89,7 +89,7 @@ function getdata(page, order, filter, type) {
     }
     else if(type==="finish"){
       let arr = []
-      return fetch(`http://localhost:8080/lipstick?_limit=6&_page=${page}`)
+      return fetch(`https://expensive-flannel-shirt-calf.cyclic.app/lipstick?_limit=6&_page=${page}`)
         .then((res) => res.json())
         .then((data) => {
           data.forEach((item) => {
@@ -116,7 +116,7 @@ function getdata(page, order, filter, type) {
     }
     else if(type==="formulation"){
       let arr = []
-      return fetch(`http://localhost:8080/lipstick?_limit=6&_page=${page}`)
+      return fetch(`https://expensive-flannel-shirt-calf.cyclic.app/lipstick?_limit=6&_page=${page}`)
         .then((res) => res.json())
         .then((data) => {
           data.forEach((item) => {
@@ -463,7 +463,7 @@ function Product() {
       <div style={{ display: "flex", justifyContent: 'center', alignItems: 'center', gap: '10px', paddingBottom: '30px' }}>
         <button disabled={page === 1} onClick={() => setpage(page - 1)} style={{ backgroundColor: '#4299E1', padding: '5px 20px', color: 'white', borderRadius: '7px' }}>{"<<  Prev"}</button>
         <p style={{ backgroundColor: '#D53F8C', padding: '5px 20px', color: 'white', borderRadius: '7px' }}>Page: {page}</p>
-        <button disabled={page === Math.ceil(totalpage / 4)} onClick={() => setpage(page + 1)} style={{ backgroundColor: '#4299E1', padding: '5px 20px', color: 'white', borderRadius: '7px' }}>{"Next  >>"}</button></div>
+        <button disabled={page === Math.floor(totalpage / 4)} onClick={() => setpage(page + 1)} style={{ backgroundColor: '#4299E1', padding: '5px 20px', color: 'white', borderRadius: '7px' }}>{"Next  >>"}</button></div>
     </div>
   )
 }
