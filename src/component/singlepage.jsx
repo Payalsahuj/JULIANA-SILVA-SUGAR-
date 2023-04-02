@@ -24,8 +24,39 @@ import lightreturn from "../Image/lightreturn.png"
 import wish from '../Image/wish.png'
 
 function getdata(id){
-    return fetch(`http://localhost:8080/lipstick/${id}`)
+    return fetch(`https://expensive-flannel-shirt-calf.cyclic.app/lipstick/${id}`)
     .then((res)=>res.json())
+}
+let initial= { "id": "",
+"name": "",
+"price": "",
+"type": [
+],
+"feature": [],
+"finish": "",
+"shade": "",
+"formulation": [],
+"image": "",
+"image1": null,
+"shade1": "",
+"image2": null,
+"shade2": "",
+"image3": null,
+"shade3": "",
+"image4": null,
+"shade4": "",
+"image5": null,
+"shade5": "",
+"image6": null,
+"shade6": "",
+"image7": null,
+"shade7": "",
+"image8": null,
+"shade8": "",
+"image9": null,
+"shade9": "",
+"image10": null,
+"shade10": ""
 }
 function Singlepage() {
     const value = useContext(Authcontext)
@@ -33,13 +64,14 @@ function Singlepage() {
     const [imageid,setimageid]=useState('')
     let { theme, settingtheme } = value
 
-    const [data,setdata]=useState({})
+    const [data,setdata]=useState(initial)
     const [shadedata,setshadedata]=useState([])
     const {id}=useParams("id")
     
     const fetchandrender=async()=>{
         try{
             let data=await getdata(id)
+            console.log(data)
             setdata(data)
             let shadedatainput=[]
             for(let x=1;x<=10;x++){
@@ -72,7 +104,7 @@ function Singlepage() {
     return <div style={{ backgroundColor: theme ? 'black' : '#ECEFF1', padding: '25px 0px' }}>
         <div style={{ margin: 'auto', width: '95%' }}><div style={{ display: 'flex', padding: '10px 20px', border: theme ? '1px solid #E1F5FE' : '', boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px', borderRadius: '10px', color: theme ? 'white' : 'black', backgroundColor: theme ? 'black' : "#E1BEE7" }}><h1>Home</h1><b style={{ padding: '0px 10px' }}>{" > "}</b><h1>LIPS</h1><b style={{ padding: '0px 10px' }}>{" > "}</b><h1><b> {data.name}</b></h1></div></div>
         <div style={{ display: "flex", width: '95%',padding:'10px 15px',borderRadius:'10px', margin: 'auto', marginTop: '25px',boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px' }}>
-            {onload?<Onloadimg data={data.image1}/>:<Onclickimg data={data[`image${imageid}`]}/>}
+            {onload&&data.image1!==null?<Onloadimg data={data[`image1`]}/>:<Onclickimg data={data[`image${imageid}`]}/>}
 
             <div style={{ width: '55%', padding: '30px',color:theme?'white':'black', textAlign: 'left' }}>
                 <h1 style={{ fontSize: '25px' }}>{data.name}</h1>

@@ -654,27 +654,6 @@
       "lastName": "admin",
       "email": "admin@gmail.com",
       "password": "1234"
-    },
-    {
-      "firstName": "payal",
-      "lastName": "sahu",
-      "email": "sahupayal220@gmail.com",
-      "password": "payal",
-      "id": 2
-    },
-    {
-      "firstName": "payal",
-      "lastName": "sahu",
-      "email": "sahupayal220@gmail.com",
-      "password": "payal",
-      "id": 3
-    },
-    {
-      "firstName": "payal",
-      "lastName": "sahu",
-      "email": "sahupayal220@gmail.com",
-      "password": "payal",
-      "id": 4
     }
   ]
 }
