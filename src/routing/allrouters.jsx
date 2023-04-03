@@ -6,6 +6,8 @@ import Signup from "../component/Signup"
 import Wishlist from "../component/wishlist"
 import Product from "../component/product"
 import Singlepage from "../component/singlepage"
+import CheckOut from "../component/Address"
+import PrivateRoute from "../authcontext/Privateroute"
 function Allrouter(){
     
     return (
@@ -17,6 +19,7 @@ function Allrouter(){
             <Route path="/admin" element={<Admin/>}/>
             <Route path="/signup" element={<Signup/>}/>
             <Route path="/wishlist" element={<Wishlist/>}/>
+            <Route path='/address' element={<PrivateRoute><CheckOut/></PrivateRoute>}/>
         </Routes>
     )
 }
