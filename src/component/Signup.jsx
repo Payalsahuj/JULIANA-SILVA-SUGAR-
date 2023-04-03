@@ -43,7 +43,7 @@ import Signin from "./Signin";
       return axios({
         method:"post",
 
-        url:" http://localhost:8080/registeredUser",
+        url:" https://expensive-flannel-shirt-calf.cyclic.app/registeredUser",
 
         data:value
       })

@@ -162,6 +162,7 @@ const reducer = (state, action) => {
 }
 
 function Product() {
+  const {HandleAddToBag,bag} = useContext(Authcontext)
   const value = useContext(Authcontext)
   const { theme, settingtheme } = value
   const [state, dispatch] = useReducer(reducer, [])
@@ -281,11 +282,6 @@ function Product() {
     }
   }
   
-  function handelcart(item){
-    
-  
-    
-  }
 
   return (
     <div style={{ backgroundColor: theme ? 'black' : '#ECEFF1' }}>
@@ -450,7 +446,7 @@ function Product() {
                   <Button variant='solid' colorScheme='pink'>
                     <img style={{display:'block',width:'20px'}} src={wish} alt="" />
                   </Button>
-                  <Button variant='solid' colorScheme='blue' onClick={()=>handelcart(item)}>
+                  <Button variant='solid' colorScheme='blue' onClick={()=>HandleAddToBag(item)}>
                     Add to cart
                   </Button>
                 </ButtonGroup>

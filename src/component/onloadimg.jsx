@@ -1,10 +1,10 @@
 function Onloadimg(props){
-    console.log(props.data[0])
+    
     return <>
     <div style={{ display: 'flex', width: '45%'}}>
                 <div style={{ display: 'flex', padding: '30px 10px', gap: '20px', flexDirection: 'column', width: '15%' }}>
-                    {props.data.map((item)=>
-                     <div >
+                    {props.data.map((item,index)=>
+                     <div key={index}>
                      <img style={{ display: 'block', borderRadius: '10px',boxShadow:' rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset' }} src={item} alt="" />
                  </div>
                     )}
@@ -22,7 +22,7 @@ function Onloadimg(props){
                     </div> */}
                 </div>
                 <div style={{ width: '85%' }}>
-                    <img style={{ margin: 'auto', height:'600px', marginTop: '30px', width: '80%', display: 'block', borderRadius: '10px', boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px' }} src={props.data[0]} alt="" />
+                    <img style={{ margin: 'auto', height:'600px', marginTop: '30px', width: '80%', display: 'block', borderRadius: '10px', boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px'}} src={props.data[0]} alt="" />
                 </div>
             </div>
             </>

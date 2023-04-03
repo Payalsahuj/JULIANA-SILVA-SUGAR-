@@ -26,7 +26,7 @@ import {
 
   function GetData (){
   
-    return fetch(" http://localhost:8080/registeredUser").then((res) => res.json())
+    return fetch(" https://expensive-flannel-shirt-calf.cyclic.app/registeredUser").then((res) => res.json())
 
   }
   
@@ -41,7 +41,7 @@ import {
     const fetchandrender=async()=>{
       try{
         let data=await GetData()
-        console.log(data)
+       
         setUserData(data)
       }
       catch(err){
