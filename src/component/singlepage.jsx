@@ -1,3 +1,4 @@
+
 import { Authcontext } from "../authcontext/authcontext"
 import { useContext,useEffect, useState} from 'react';
 import { useParams } from "react-router-dom";
@@ -67,11 +68,13 @@ function Singlepage() {
     const [data,setdata]=useState(initial)
     const [shadedata,setshadedata]=useState([])
     const {id}=useParams("id")
+
+    const {HandleAddToBag,bag} = useContext(Authcontext)
     
     const fetchandrender=async()=>{
         try{
             let data=await getdata(id)
-            console.log(data)
+           
             setdata(data)
             let shadedatainput=[]
             for(let x=1;x<=10;x++){
@@ -131,7 +134,7 @@ function Singlepage() {
 
                 <div style={{ margin: '20px 0px' }}>
                     <Button style={{ backgroundColor: '#D53F8C', color: 'white',boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px' }}>  <img style={{display:'block',width:'20px'}} src={wish} alt="" /></Button>
-                    <Button style={{ marginLeft: '10px', backgroundColor:'#4299E1', color: theme?'white':'white',boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px' }} >ADD TO BAG</Button>
+                    <Button style={{ marginLeft: '10px', backgroundColor:'#4299E1', color: theme?'white':'white',boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px' }} onClick={()=>HandleAddToBag(data)}>ADD TO BAG</Button>
                 </div>
                 <Center height='20px'>
                     <Divider orientation='horizontal' />

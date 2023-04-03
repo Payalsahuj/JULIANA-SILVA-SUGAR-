@@ -51,7 +51,7 @@ import {
   import lightsearch from "../Image/lightsearch.png"
   import {Authcontext} from "../authcontext/authcontext"
   import { useContext } from 'react';
-  import { useNavigate } from "react-router-dom";
+  import { useNavigate, Link as Baglink} from "react-router-dom";
   import Signup from "../component/Signup.jsx"
   import Signin from "../component/Signin.jsx"
 
@@ -63,7 +63,7 @@ import {
  
     const { isOpen, onToggle } = useDisclosure();
   
-    
+  
     const value=useContext(Authcontext)
     let {theme,settingtheme}=value
     function handelsignup(){
@@ -182,17 +182,6 @@ import {
             <Flex border={theme?'1px solid white':'2px solid white'}  display={{base:'none',md:'flex', lg:'flex'}} borderRadius="14px" padding="5px 10px" color={theme?'white':'black'} >
             <Input placeholder='Search products' focusBorderColor='brand.100' style={{ color:'black'}} border={"none"} size='sm' />< Image src={theme?darksearch:lightsearch} w="25px" h='24px' paddingTop={'5px'} paddingRight='5px' alt=''/>Search</Flex>
             </Box>
-            
-
-            {/* <Box   display={{base:'flex',md:'none', lg:'none'}}  >
-            <Flex  > <Button display={displaysearch?"none":"flex"} bg='brand.100' borderRadius='50%' onClick={settingsearch}><Icon as={Search2Icon} /><Text pl='7px' color={'gray'}>Search</Text></Button></Flex></Box>
-            
-            <Box display={displaysearch?"flex":"none"} position='absolute'>
-            <Flex border={"2px solid grey"}  borderRadius="14px" padding="5px 10px" >
-            <Input placeholder='Search products' focusBorderColor='brand.100' border={"none"} size='sm' /></Flex></Box>
-            
- */}
-
             <Button display={{base:'flex',md:'none', lg:'none'}} onClick={onOpen} bg={theme?'black':'brand.100'}>< Image src={theme?darksearch:lightsearch} w="25px" alt=''/><Text pl='7px' color={theme?'white':'black'}>Search</Text></Button>
     
 
@@ -230,7 +219,7 @@ import {
 
             <Image w="40px" src={theme?darkfav:lightfav} alt=''/>
             
-            <Link to='/bag'><Image w="40px" src={theme?darkbag:lightbag} alt=''/></Link>
+            <Baglink to='/bag'><Button bg={theme?'black':'brand.100'} onClick={()=>console.log("ok")}><Image w="40px" src={theme?darkbag:lightbag} alt=''/></Button></Baglink>
             
             <Image w="40px" src={theme?darkadmin:lightadmin} alt=''/>
             </Flex>

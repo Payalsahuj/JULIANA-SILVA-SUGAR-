@@ -15,7 +15,7 @@ export const AuthcontextProvider=(props)=>{
     // console.log("Context", user)
     const handlePrice = () => {
       let ans = 0;
-      bag.map((item) => (ans += +item.offerPrice * +item.amount));
+      bag.map((item) => (ans += +item.price * +item.amount));
       setPrice(ans);
     };
     const HandleAddToBag = (item) => {
@@ -40,10 +40,9 @@ export const AuthcontextProvider=(props)=>{
         });
         setBag([...bag, item])
       }
-     
-      
-  
     }
+console.log(bag)
+
     const HandleChange = (item, d) => {
       const ind = bag.indexOf(item);
       const arr = bag;
@@ -56,8 +55,6 @@ export const AuthcontextProvider=(props)=>{
   
   
     const [theme,settheme]=useState(true)
-    const val=useRef()
-    console.log(val)
     function settingtheme(){
         settheme(!theme)
     }
