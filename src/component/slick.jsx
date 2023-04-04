@@ -106,7 +106,7 @@ export default class MultipleItems extends Component{
       ]
     };
     return (
-      <div style={{padding: '0px 80px'}}  >
+      <div style={{padding: '0px 30px'}}  >
         
         <Slider  {...settings} >
           <div style={{display:'flex',padding:'10px 10px',gap:'20px'}}>
@@ -322,7 +322,7 @@ export  class MultipleItemstwo extends Component{
       ]
     };
     return (
-      <div style={{padding: '0px 80px'}}>
+      <div style={{padding: '0px 30px'}}>
        
         <Slider  {...settings}>
           <div style={{display:'flex',padding:'10px 0px'}}>
@@ -529,7 +529,7 @@ export  class MultipleItemsthree extends Component{
       ]
     };
     return (
-      <div style={{padding: '0px 80px'}}>
+      <div style={{padding: '0px 30px'}}>
         <h1 style={{textAlign:'center',fontSize:'30px',color:'white'}}><b>BUY NOW PAY LATER</b></h1>
         <Slider  {...settings}>
           <div style={{display:'flex',padding:'10px 0px'}}>
@@ -669,7 +669,7 @@ export  class MultipleItemsfour extends Component{
     
     };
     return (
-      <div style={{padding: '0px 80px'}}>
+      <div style={{padding: '0px 30px'}}>
         <h1 style={{textAlign:'center',fontSize:'30px',color:'white'}}><b>GIFTING</b></h1>
         <Slider  {...settings}>
           <div style={{display:'flex',padding:'10px 0px'}}>
@@ -808,7 +808,7 @@ export  class MultipleItemsfive extends Component{
       ]
     };
     return (
-      <div style={{padding: '0px 80px'}}>
+      <div style={{padding: '0px 30px'}}>
         
         <Slider  {...settings}>
           <div style={{display:'flex',padding:'10px 0px'}}>
