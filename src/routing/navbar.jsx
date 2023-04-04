@@ -54,7 +54,7 @@ import {
   import { useNavigate, Link as Baglink} from "react-router-dom";
   import Signup from "../component/Signup.jsx"
   import Signin from "../component/Signin.jsx"
-
+  import {  Link as LIPSlink} from "react-router-dom";
   function Navbar(){
     return (<WithSubnavigation />)
   }
@@ -65,10 +65,8 @@ import {
   
   
     const value=useContext(Authcontext)
-    let {theme,settingtheme}=value
-    function handelsignup(){
-      return <Signup/>   
-   }
+    let {theme}=value
+   
     return (
       <Box  position={"relative"} border={theme?'1px solid white':'1px solid pink'}>
         
@@ -229,10 +227,10 @@ import {
     )
   }
   
-  const DesktopNav = () => {
+  const DesktopNav = () => {     //////LIPS nav
     
     const value=useContext(Authcontext)
-    let {theme,settingtheme}=value
+    let {theme}=value
     const linkColor = useColorModeValue(theme?'white':'black', '#BDBDBD');
     const linkHoverColor = useColorModeValue('#BDBDBD', '#BDBDBD');
     const popoverContentBgColor = useColorModeValue('white', 'gray.800');
@@ -245,7 +243,7 @@ import {
               <PopoverTrigger>
                 <Link
                   p={2}
-                  href={navItem.href ?? '#'}
+                  // href={navItem.href ?? '#'}
                   fontSize={'sm'}
                   fontWeight={500}
                   color={linkColor}
@@ -253,7 +251,9 @@ import {
                     textDecoration: 'none',
                     color: linkHoverColor,
                   }}>
+                    <LIPSlink to={navItem.href ?? '#'}>
                   {navItem.label}
+                  </LIPSlink>
                 </Link>
               </PopoverTrigger>
   
@@ -280,15 +280,18 @@ import {
   };
   
   const DesktopSubNav = ({ label, href, subLabel }) => {
+    console.log(href)
+    
     return (
       <Link
-        href={href}
+        // href={href}
         role={'group'}
         display={'block'}
         p={2}
         rounded={'md'}
         _hover={{ bg: useColorModeValue('pink.50', 'gray.900') }}>
         <Stack direction={'row'} align={'center'}>
+          <LIPSlink to={href}>
           <Box>
             <Text
               transition={'all .3s ease'}
@@ -298,6 +301,7 @@ import {
             </Text>
             {subLabel.map((item,index)=><HStack key={index}><Text fontSize={'sm'} textAlign='left'>{item}</Text></HStack>)}
           </Box>
+          </LIPSlink>
           <Flex
             transition={'all .3s ease'}
             transform={'translateX(-10px)'}
@@ -328,7 +332,7 @@ import {
   
   const MobileNavItem = ({ label, children, href }) => {
     const { isOpen, onToggle } = useDisclosure();
-  
+    
     return (
       <Stack spacing={4} onClick={children && onToggle}>
         <Flex
@@ -396,6 +400,7 @@ import {
         },
         
       ],
+      href:'/product'
     },
     {
       label: 'EYES',
@@ -416,6 +421,7 @@ import {
           href: '#',
         },
       ],
+      href:'#'
     },
     {
         label: 'FACE',
@@ -431,6 +437,7 @@ import {
             href: '#',
           },
         ],
+        href:'#'
       },
       {
         label: 'NAILS',
@@ -442,6 +449,7 @@ import {
           },
           
         ],
+        href:'#'
       },
       {
         label: 'SKIN CARE',
@@ -462,6 +470,7 @@ import {
             href:'#',
           }
         ],
+        href:'#'
       },
       {
         label: 'ACCESSORIES',
@@ -477,6 +486,7 @@ import {
             href: '#',
           },
         ],
+        href:'#'
       },
       {
         label: 'GIFT & KITS',
@@ -488,6 +498,7 @@ import {
           },
           
         ],
+        href:'#'
       },
       {
         label: 'BESTSELLERS',

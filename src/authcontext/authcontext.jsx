@@ -41,7 +41,7 @@ export const AuthcontextProvider=(props)=>{
         setBag([...bag, item])
       }
     }
-console.log(bag)
+// console.log(bag)
 
     const HandleChange = (item, d) => {
       const ind = bag.indexOf(item);
@@ -53,7 +53,7 @@ console.log(bag)
       setBag([...arr])
     }
   
-  
+  console.log(auth)
     const [theme,settheme]=useState(true)
     function settingtheme(){
         settheme(!theme)

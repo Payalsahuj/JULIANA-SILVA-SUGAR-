@@ -10,11 +10,13 @@ import theme from './Themeextend/themeextend';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <AuthcontextProvider>
-    <BrowserRouter>
+    
     <ChakraProvider theme={theme}>
+    <BrowserRouter>
       <App />
+      </BrowserRouter>
       </ChakraProvider>
-    </BrowserRouter>
+   
   </AuthcontextProvider>
 );
 
