@@ -8,7 +8,7 @@ import { useToast } from '@chakra-ui/react'
 
 
 const CheckOut = () => {
-  const { bag, setBag,price} = useContext(Authcontext)
+  const { theme,bag, setBag,price} = useContext(Authcontext)
   const toast = useToast()
   const navigate = useNavigate();
   const[finalPrice, setFinalPrice]= useState(0)
@@ -43,7 +43,7 @@ const CheckOut = () => {
       <SimpleGrid columns={{lg:2,md:2,sm:1,base:1}} spacing={10}
      >
         <Box>
-          <Text className="ggbag" fontWeight="600" fontSize={30}>YOUR GG ORDERS</Text>
+          <Text className="ggbag" fontWeight="600" fontSize={30}>YOUR JULAIANA SILVA ORDERS</Text>
           {bag.map((ele, i) => (
             <Flex key={i} border='1px solid lightgray' mt='5' justifyContent='center' ml='145' w='70%'>  <Box width="100px">
               {" "}

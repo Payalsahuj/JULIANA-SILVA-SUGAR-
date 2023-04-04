@@ -56,7 +56,7 @@ function Bag() {
           <span>Rs: {price}/-</span>
         </div>
         <div style={{marginTop:'20px',paddingBottom:'40px'}}>
-        {bag.length !== 0 ? <Link to="/checkout"><button className='checkout' style={{color:theme?'white':'black'}}>Proceed to Checkout {">"}</button></Link> : <Heading color={theme?'white':'black'}>Bag is Empty</Heading>}
+        {bag.length !== 0 ? <Link to="/address"><button className='checkout' style={{color:theme?'black':'white',backgroundColor:theme?'white':'black'}}>Proceed to Checkout {">"}</button></Link> : <Heading color={theme?'white':'black'}>Bag is Empty</Heading>}
         </div>
       </div>
     </article>

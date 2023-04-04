@@ -58,7 +58,7 @@ import {
   
       userData.forEach((item) => {
   
-        if (item.email == email && item.password == password) {
+        if (item.email === email && item.password === password) {
           setUser(item);
           setAuth(true);
           flag = true;
