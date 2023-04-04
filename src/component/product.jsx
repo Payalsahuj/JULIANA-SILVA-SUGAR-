@@ -162,16 +162,16 @@ const reducer = (state, action) => {
 }
 
 function Product() {
-  const {HandleAddToBag,bag} = useContext(Authcontext)
+  const {HandleAddToBag} = useContext(Authcontext)
   const value = useContext(Authcontext)
-  const { theme, settingtheme } = value
+  const { theme} = value
   const [state, dispatch] = useReducer(reducer, [])
   const [order, setorder] = useState("")
   const [page, setpage] = useState(1)
   const [filter, setfilter] = useState("")
   const [totalpage, settotalpage] = useState(0)
   const [type, settype] = useState("")
-  const [cart,setcart]=useState([])
+  // const [cart,setcart]=useState([])
   const fetchandrender = async (page, order, filter) => {
     try {
       let data = await getdata(page, order, filter, type)
@@ -434,7 +434,7 @@ function Product() {
                     <Text>
                       {item.shade} Shades
                     </Text>
-                    <Text color='white' fontSize='2xl'>
+                    <Text color={theme?'white':'blue'} fontSize='2xl'>
                       Rs. {item.price}
                     </Text>
                   </Stack>
