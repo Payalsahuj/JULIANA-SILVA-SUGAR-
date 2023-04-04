@@ -56,6 +56,6 @@ polite-sheep-7319
 
 
 
-
+#  Cloned Website
 JULIANA SILVA is the clone of SUGAR (cosmetics online store) , an e-commerce site. This is a A brand of choice for the women of today! 
-<p><a href=""_blank" rel="noreferrer"> <img src="https://user-images.githubusercontent.com/115584065/229886882-076a1c07-2589-4e54-ad4c-b6c523b44bb2.png" alt="react" width="50" height="40"/> </a></p>
+<p><a href=""_blank" rel="noreferrer"> <img src="https://user-images.githubusercontent.com/115584065/229886882-076a1c07-2589-4e54-ad4c-b6c523b44bb2.png" alt="react" /> </a></p>
