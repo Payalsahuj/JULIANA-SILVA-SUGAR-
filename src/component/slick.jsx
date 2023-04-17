@@ -49,10 +49,10 @@ export class SimpleSlider extends Component {
             <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F14bd68a6-77a3-4cac-8d80-bce249d31a01.jpg&w=1920&q=75" alt="" />
           </div>
           <div>
-            <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F0886c9f4-a521-4ff2-9ec7-6a5947860753.jpg&w=1920&q=75" alt="" />
+            <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F5357862f-5dd4-4bdd-929f-1702e7d8d4e9.jpg&w=1920&q=75" alt="" />
           </div>
           <div>
-            <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2Ffeb81cd7-cb89-4d40-8b45-b2f5bfe406d9.jpg&w=1920&q=75" alt="" />
+            <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F54569296-0b1c-4c69-b73c-2f822ee3a78c.gif&w=1920&q=75" alt="" />
           </div>
           <div>
             <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2Ff3167316-1728-4c8d-8389-3e467cf033a0.jpg&w=1920&q=75" alt="" />
@@ -112,7 +112,7 @@ export default class MultipleItems extends Component{
           <div style={{display:'flex',padding:'10px 10px',gap:'20px'}}>
             <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_044847a5-bda3-4987-ac04-5bca0ff63193.jpg%3Fv%3D1680073209&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Mette as hell makeup set</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Mette as hell makeup set</p>
               <p>33 shades</p>
               <h3>Rs. 849</h3>
               <div style={{marginTop:'10px'}}>
@@ -123,7 +123,7 @@ export default class MultipleItems extends Component{
           <div style={{display:'flex',padding:'10px 0px'}}>
           <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F476667375-1.jpg%3Fv%3D1678725375&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Ace of Face Foundation stick</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Ace of Face Foundation stick</p>
               <p>18 shades</p>
               <h3>Rs. 999</h3>
               <div style={{marginTop:'10px'}}>
@@ -134,7 +134,7 @@ export default class MultipleItems extends Component{
           <div style={{display:'flex',padding:'10px 0px'}}>
           <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2Fsugar-cosmetics-smudge-me-not-liquid-lipstick-minis-set-15520724582483.jpg%3Fv%3D1620651966&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Smudge Me, Not liquid lipsticks</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Smudge Me, Not liquid lipsticks</p>
               <p>26 shades</p>
               <h3>Rs. 799</h3>
               <div style={{marginTop:'10px'}}>
@@ -144,8 +144,8 @@ export default class MultipleItems extends Component{
           </div><div style={{display:'flex',padding:'10px 0px'}}>
           <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FDouble-Date-Extreme-Volume-Mascara-Powered-by-Images-1025x1400-1.jpg%3Fv%3D1636386431&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Double Date Extreme Volume Mascara Duo-01 Black Jack</p>
-             
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Double Date Extreme Volume Mascara Duo-01 Black Jack</p>
+              <p>Unique shade</p>
               <h3>Rs. 799</h3>
               <div style={{marginTop:'10px'}}>
                 <button style={{backgroundColor:'black', color:'white', padding:'5px 15px',borderRadius:'7px'}}>SELECT SHADE</button>
@@ -154,7 +154,7 @@ export default class MultipleItems extends Component{
           </div><div style={{display:'flex',padding:'10px 0px'}}>
           <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_9909d205-c5f9-476d-9903-c4beffbfebb7.jpg%3Fv%3D1637068160&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Arch Arrival Brown Pen set</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Arch Arrival Brown Pen set</p>
               <p>2 shades</p>
               <h3>Rs. 425</h3>
               <div style={{marginTop:'10px'}}>
@@ -163,9 +163,9 @@ export default class MultipleItems extends Component{
             </div>
           </div>
           <div style={{display:'flex',padding:'10px 0px'}}>
-          <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_6f55bcac-3e42-4253-88ee-cec0fa43c62a.jpg%3Fv%3D1645608270&w=256&q=75" alt="" /></div>
+          <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_bec48e26-bd4f-4b25-9a65-742f14ce4955.jpg%3Fv%3D1671604434&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Mette Attack Transferproof Lipstick</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Mette Attack Transferproof Lipstick</p>
               <p>17 shades</p>
               <h3>Rs. 749</h3>
               <div style={{marginTop:'10px'}}>
@@ -177,7 +177,7 @@ export default class MultipleItems extends Component{
           <div style={{display:'flex',padding:'10px 0px'}}>
           <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F424092031-1.jpg%3Fv%3D1661529396&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Wingman Waterproof Microliner</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Wingman Waterproof Microliner</p>
               <p>14 shades</p>
               <h3>Rs. 599</h3>
               <div style={{marginTop:'10px'}}>
@@ -189,7 +189,7 @@ export default class MultipleItems extends Component{
           <div style={{display:'flex',padding:'10px 0px'}}>
           <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F382512089-mettle-priming-balm-01.jpg%3Fv%3D1648654861&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Counter De force face Palette</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Counter De force face Palette</p>
               <p>3 shades</p>
               <h3>Rs. 799</h3>
               <div style={{marginTop:'10px'}}>
@@ -328,7 +328,7 @@ export  class MultipleItemstwo extends Component{
           <div style={{display:'flex',padding:'10px 0px'}}>
             <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F476667375-1.jpg%3Fv%3D1678725375&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Goddess of Flawless BB</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Goddess of Flawless BB</p>
               <p>7 shades</p>
               <h3>Rs. 699</h3>
               <div style={{marginTop:'10px'}}>
@@ -339,7 +339,7 @@ export  class MultipleItemstwo extends Component{
           <div style={{display:'flex',padding:'10px 0px'}}>
           <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FImage1.jpg%3Fv%3D1676391111&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Auto Correct Creaseless</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Auto Correct Creaseless</p>
               <p>7 shades</p>
               <h3>Rs. 599</h3>
               <div style={{marginTop:'10px'}}>
@@ -350,7 +350,7 @@ export  class MultipleItemstwo extends Component{
           <div style={{display:'flex',padding:'10px 0px'}}>
           <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F2-3-product-image.jpg%3Fv%3D1677068145&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Aquaholic Hydratic Foundation</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Aquaholic Hydratic Foundation</p>
               <p>10 shades</p>
               <h3>Rs. 899</h3>
               <div style={{marginTop:'10px'}}>
@@ -360,7 +360,7 @@ export  class MultipleItemstwo extends Component{
           </div><div style={{display:'flex',padding:'10px 0px'}}>
           <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FArtboard1.jpg%3Fv%3D1676035817&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Sugar Tipsy Lips Scrum</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Sugar Tipsy Lips Scrum</p>
               <p>6 shades</p>
               <h3>Rs. 499</h3>
               <div style={{marginTop:'10px'}}>
@@ -370,7 +370,7 @@ export  class MultipleItemstwo extends Component{
           </div><div style={{display:'flex',padding:'10px 0px'}}>
           <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F439876297-01.jpg%3Fv%3D1669621110&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Mousse Muse Maskproof Lip</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Mousse Muse Maskproof Lip</p>
               <p>8 shades</p>
               <h3>Rs. 599</h3>
               <div style={{marginTop:'10px'}}>
@@ -381,7 +381,7 @@ export  class MultipleItemstwo extends Component{
           <div style={{display:'flex',padding:'10px 0px'}}>
           <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_bec48e26-bd4f-4b25-9a65-742f14ce4955.jpg%3Fv%3D1671604434&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Bold unfold Waterproof Mascara</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Bold unfold Waterproof Mascara</p>
               <p>8 shades</p>
               <h3>Rs. 540</h3>
               <div style={{marginTop:'10px'}}>
@@ -393,7 +393,7 @@ export  class MultipleItemstwo extends Component{
           <div style={{display:'flex',padding:'10px 0px'}}>
           <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FSUGAR-Prime-Sublime-Primer---Powered-By-Images1_ebe7ea59-dff5-4a2a-9a70-c94435d3f46e.jpg%3Fv%3D1666928973&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Sugar Prime Subline Primer</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Sugar Prime Subline Primer</p>
               <p>4 shades</p>
               <h3>Rs. 440</h3>
               <div style={{marginTop:'10px'}}>
@@ -405,7 +405,7 @@ export  class MultipleItemstwo extends Component{
           <div style={{display:'flex',padding:'10px 0px'}}>
           <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_2d186f9b-9024-4e23-a0d2-a55b7671e89c.jpg%3Fv%3D1657123108&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Counter De force Eyes makeup</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Counter De force Eyes makeup</p>
               <p>3 shades</p>
               <h3>Rs. 1033</h3>
               <div style={{marginTop:'10px'}}>
@@ -535,7 +535,7 @@ export  class MultipleItemsthree extends Component{
           <div style={{display:'flex',padding:'10px 0px'}}>
             <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FVineeta_s-Favourite-Makeup-kit---WBG-images_Cover.jpg%3Fv%3D1676477676&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Vineeta's Favourite Makeup Kits</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Vineeta's Favourite Makeup Kits</p>
               
               <h3>Rs. 2999</h3>
               <div style={{marginTop:'10px'}}>
@@ -546,7 +546,7 @@ export  class MultipleItemsthree extends Component{
           <div style={{display:'flex',padding:'10px 0px'}}>
           <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FLaunch---Sweat-No-More-Makeup-Kit---WBG-Images_11.jpg%3Fv%3D1653494527&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Sweat No more makeup kit</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Sweat No more makeup kit</p>
               
               <h3>Rs. 2699</h3>
               <div style={{marginTop:'10px'}}>
@@ -557,7 +557,7 @@ export  class MultipleItemsthree extends Component{
           <div style={{display:'flex',padding:'10px 0px'}}>
           <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F2-3-product-image.jpg%3Fv%3D1677068145&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Aquaholic Hydratic Foundation</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Aquaholic Hydratic Foundation</p>
             
               <h3 >Rs. 899</h3>
               <div style={{marginTop:'10px'}}>
@@ -567,7 +567,7 @@ export  class MultipleItemsthree extends Component{
           </div><div style={{display:'flex',padding:'10px 0px'}}>
           <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_0cbf7ca7-3b1c-4838-8fda-176ebd7d38fa.jpg%3Fv%3D1649423983&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Fastive Ready makeup Kit</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}} >Fastive Ready makeup Kit</p>
               
               <h3>Rs. 1999</h3>
               <div style={{marginTop:'10px'}}>
@@ -577,7 +577,7 @@ export  class MultipleItemsthree extends Component{
           </div><div style={{display:'flex',padding:'10px 0px'}}>
           <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_0ca61ef7-05ce-49be-9fa1-de7c41b99a1f.jpg%3Fv%3D1668050175&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Anniversary makeup kit</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Anniversary makeup kit</p>
         
               <h3>Rs. 2499</h3>
               <div style={{marginTop:'10px'}}>
@@ -588,7 +588,7 @@ export  class MultipleItemsthree extends Component{
           <div style={{display:'flex',padding:'10px 0px'}}>
           <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_969f5548-2c56-4506-ada8-159b53a8f630.jpg%3Fv%3D1649423977&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Glamup kit for womens</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Glamup kit for womens</p>
               
               <h3>Rs. 1340</h3>
               <div style={{marginTop:'10px'}}>
@@ -600,7 +600,7 @@ export  class MultipleItemsthree extends Component{
           <div style={{display:'flex',padding:'10px 0px'}}>
           <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F430185524-value-set-29-wbg_main_image.jpg%3Fv%3D1664294939&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Makeup in focus value set</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Makeup in focus value set</p>
             
               <h3>Rs. 3423</h3>
               <div style={{marginTop:'10px'}}>
@@ -612,7 +612,7 @@ export  class MultipleItemsthree extends Component{
           <div style={{display:'flex',padding:'10px 0px'}}>
           <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F419424297-value-set-16-wbg-01.jpg%3Fv%3D1661530291&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Set in Right Makeup set</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Set in Right Makeup set</p>
               
               <h3>Rs. 1033</h3>
               <div style={{marginTop:'10px'}}>
@@ -675,7 +675,7 @@ export  class MultipleItemsfour extends Component{
           <div style={{display:'flex',padding:'10px 0px'}}>
             <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F04_b475d6dd-c07b-43b0-9f78-c989b2fe4f6d.jpg%3Fv%3D1659446263&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Wedding makeu kit</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Wedding makeu kit</p>
               
               <h3>Rs. 1699</h3>
               <div style={{marginTop:'10px'}}>
@@ -686,7 +686,7 @@ export  class MultipleItemsfour extends Component{
           <div style={{display:'flex',padding:'10px 0px'}}>
           <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F399160329-9-to-5-makeup-kit-wbg-01.jpg%3Fv%3D1654013564&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>The Office Makeuo Kit</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>The Office Makeuo Kit</p>
               
               <h3>Rs. 199</h3>
               <div style={{marginTop:'10px'}}>
@@ -697,7 +697,7 @@ export  class MultipleItemsfour extends Component{
           <div style={{display:'flex',padding:'10px 0px'}}>
           <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2Fsugar-cosmetics-matte-as-hell-crayon-lipstick-minis-set-28270316945491.jpg%3Fv%3D1675401557&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Matte as Hell Crayon Lipstick</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Matte as Hell Crayon Lipstick</p>
             
               <h3>Rs. 899</h3>
               <div style={{marginTop:'10px'}}>
@@ -707,7 +707,7 @@ export  class MultipleItemsfour extends Component{
           </div><div style={{display:'flex',padding:'10px 0px'}}>
           <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_37e8dc88-a720-44ed-a5f3-1e0f0e95bc17.jpg%3Fv%3D1659517990&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Date Night Makeup</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Date Night Makeup</p>
               
               <h3>Rs. 1599</h3>
               <div style={{marginTop:'10px'}}>
@@ -717,7 +717,7 @@ export  class MultipleItemsfour extends Component{
           </div><div style={{display:'flex',padding:'10px 0px'}}>
           <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_0cbf7ca7-3b1c-4838-8fda-176ebd7d38fa.jpg%3Fv%3D1649423983&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Festive Ready kit</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Festive Ready kit</p>
         
               <h3>Rs. 999</h3>
               <div style={{marginTop:'10px'}}>
@@ -728,7 +728,7 @@ export  class MultipleItemsfour extends Component{
           <div style={{display:'flex',padding:'10px 0px'}}>
           <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FRakshaBandhanKit-WBGImages.jpg%3Fv%3D1654694624&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Everyday Makeup Kit</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Everyday Makeup Kit</p>
               
               <h3>Rs. 1240</h3>
               <div style={{marginTop:'10px'}}>
@@ -740,7 +740,7 @@ export  class MultipleItemsfour extends Component{
           <div style={{display:'flex',padding:'10px 0px'}}>
           <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F430185524-value-set-29-wbg_main_image.jpg%3Fv%3D1664294939&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Makeup in focus value set</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Makeup in focus value set</p>
             
               <h3>Rs. 3423</h3>
               <div style={{marginTop:'10px'}}>
@@ -752,7 +752,7 @@ export  class MultipleItemsfour extends Component{
           <div style={{display:'flex',padding:'10px 0px'}}>
           <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F419424297-value-set-16-wbg-01.jpg%3Fv%3D1661530291&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Set in Right Makeup set</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Set in Right Makeup set</p>
               
               <h3>Rs. 1033</h3>
               <div style={{marginTop:'10px'}}>
@@ -814,7 +814,7 @@ export  class MultipleItemsfive extends Component{
           <div style={{display:'flex',padding:'10px 0px'}}>
             <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_e4b6c948-178e-4bfe-a3b3-926119dea615.jpg%3Fv%3D1649865681&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Set of 4 Kajal in one set</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Set of 4 Kajal in one set</p>
               
               <h3>Rs. 799</h3>
               <div style={{marginTop:'10px'}}>
@@ -825,7 +825,7 @@ export  class MultipleItemsfive extends Component{
           <div style={{display:'flex',padding:'10px 0px'}}>
           <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FValue-Set-11---WBG-Images_1.jpg%3Fv%3D1659456262&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Bold Honesty Face Makeup</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Bold Honesty Face Makeup</p>
               
               <h3>Rs. 699</h3>
               <div style={{marginTop:'10px'}}>
@@ -836,7 +836,7 @@ export  class MultipleItemsfive extends Component{
           <div style={{display:'flex',padding:'10px 0px'}}>
           <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FRakshaBandhanKit-WBGImages.jpg%3Fv%3D1654694624&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Bold Honesty Makeup Set</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Bold Honesty Makeup Set</p>
             
               <h3>Rs. 679</h3>
               <div style={{marginTop:'10px'}}>
@@ -846,9 +846,9 @@ export  class MultipleItemsfive extends Component{
           </div><div style={{display:'flex',padding:'10px 0px'}}>
           <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F2_bb525208-246a-4f40-b57f-d88372708398.jpg%3Fv%3D1655308814&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Glam Eye Makeup Value set</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Glam Eye Makeup Value set</p>
              
-              <h3>Rs. 1299</h3>
+              <h3 >Rs. 1299</h3>
               <div style={{marginTop:'10px'}}>
                 <button style={{backgroundColor:'black', color:'white', padding:'5px 15px',borderRadius:'7px'}}>CHOOSE ITEM</button>
               </div>
@@ -856,7 +856,7 @@ export  class MultipleItemsfive extends Component{
           </div><div style={{display:'flex',padding:'10px 0px'}}>
           <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F08.jpg%3Fv%3D1630511040&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Face Pallete shadow set</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Face Pallete shadow set</p>
              
               <h3>Rs. 795</h3>
               <div style={{marginTop:'10px'}}>
@@ -867,7 +867,7 @@ export  class MultipleItemsfive extends Component{
           <div style={{display:'flex',padding:'10px 0px'}}>
           <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FWBG1_73e85cb4-80d8-4eeb-ba32-deaf11c4483f.jpg%3Fv%3D1658851292&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Blushen and Poppine set</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Blushen and Poppine set</p>
               
               <h3>Rs. 749</h3>
               <div style={{marginTop:'10px'}}>
@@ -879,7 +879,7 @@ export  class MultipleItemsfive extends Component{
           <div style={{display:'flex',padding:'10px 0px'}}>
           <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2Fsugar-cosmetics-lip-balm-sheet-mask-15782913671251.jpg%3Fv%3D1619152222&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Lip Balm + Sheet Masks</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Lip Balm + Sheet Masks</p>
             
               <h3 >Rs. 599</h3>
               <div style={{marginTop:'10px'}}>
@@ -891,7 +891,7 @@ export  class MultipleItemsfive extends Component{
           <div style={{display:'flex',padding:'10px 0px'}}>
           <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FWBG_648fe1ef-ce38-46b9-983f-2ca69fba5806.jpg%3Fv%3D1659369810&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
-              <p>Matte the Base Value Set</p>
+              <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Matte the Base Value Set</p>
             
               <h3>Rs. 499</h3>
               <div style={{marginTop:'10px'}}>

@@ -70,7 +70,7 @@ import {
   
   
   
-          description: "Welcome to Grow Glamorous",
+          description: "Welcome to Juliana silva",
   
           status: "success",
           duration: 1500,
@@ -147,6 +147,7 @@ import {
                     <Checkbox>Remember me</Checkbox>
                     <Link color={'rgb(218 170 77)'}>Forgot password?</Link>
                   </Stack>
+                  
                   <Button
                     onClick={HandleLogin}
                     bg={'black'}
@@ -156,6 +157,7 @@ import {
                     }}>
                     Sign in
                   </Button>
+                  
                 </Stack>
                 <Stack pt={10}>
                   <Text align={'center'} fontWeight={'bold'} color={'rgb(218 170 77)'}>
