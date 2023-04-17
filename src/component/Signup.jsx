@@ -80,8 +80,11 @@ import Signin from "./Signin";
         duration: 1000,
         isClosable: true,
       });
-
+      
+      alert('Please Signin now for conformation!!!')
+      
       setFormData(UserDetails)
+      
     }
   }
   // console.log(formData)
@@ -175,6 +178,7 @@ import Signin from "./Signin";
               </InputGroup>
             </FormControl>
             <Stack spacing={10} pt={2}>
+              <a href={'/'}>
               <Button
               onClick={handleRegister}
                 loadingText="Submitting"
@@ -186,6 +190,8 @@ import Signin from "./Signin";
                 }}>
                 Sign up
               </Button>
+              </a>
+              
             </Stack>
             <Stack pt={6}>
               <Text align={'center'}>

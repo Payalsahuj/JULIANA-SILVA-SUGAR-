@@ -22,7 +22,7 @@ function Bottomnav(){
        navigate('/')     
     }
     return <Box display={{base:'flex' ,md:'none', lg:'none'}} >
-    <div style={{ border: theme?'2px solid blue':'2px solid pink',backgroundColor:theme?'black':'#E1BEE7',
+    <div style={{ border: theme?'1px solid blue':'1px solid pink',backgroundColor:theme?'black':'#E1BEE7',
         height: '70px',
         width: '100%',
         position:'fixed',
@@ -33,7 +33,7 @@ function Bottomnav(){
             
             <div style={{marginTop:'20px'}}><Image display={'block'} src={theme?darkfav:lightfav} alt=''/></div>
             <div style={{marginTop:'20px'}}><Button h='20px' bg={theme?'black':'brand.100'} color={theme?'white':'black'}  onClick={settingtheme}> < Image display={'block'}  h="30px" src={theme?darktheme:lighttheme} alt=''/></Button></div>
-            <div><button onClick={handellogo}><Image src={theme?darklogo:v} w="140px" borderRadius={'50%'} h="100px" border={theme?'2px solid blue':'2px solid #E1BEE7'} alt='logo' /></button></div>
+            <div><button onClick={handellogo}><Image src={theme?darklogo:v} w="100px" borderRadius={'50%'} h="95px" border={theme?'1px solid blue':'1px solid #E1BEE7'} alt='logo' /></button></div>
             <Baglink to='/bag'><Button bg={theme?'black':'brand.100'} style={{marginTop:'20px'}} onClick={()=>console.log("ok")}><Image w="30px" src={theme?darkbag:lightbag} alt=''/></Button></Baglink>
             <div style={{marginTop:'20px'}}><Image display={'block'} h='35px' src={theme?darkadmin:lightadmin} alt=''/></div>
             </div>

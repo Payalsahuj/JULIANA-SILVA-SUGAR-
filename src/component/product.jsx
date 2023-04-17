@@ -1,4 +1,5 @@
 import { Authcontext } from "../authcontext/authcontext"
+// https://expensive-flannel-shirt-calf.cyclic.app/
 import { useContext, useEffect, useReducer, useState } from 'react';
 import {
   Accordion,
@@ -430,7 +431,7 @@ function Product() {
                     style={{ margin: 'auto', height: '270px' }}
                   />
                   <Stack mt='6' spacing='3'>
-                    <Heading size='md'>{item.name}</Heading>
+                    <Heading size='md' style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>{item.name}</Heading>
                     <Text>
                       {item.shade} Shades
                     </Text>

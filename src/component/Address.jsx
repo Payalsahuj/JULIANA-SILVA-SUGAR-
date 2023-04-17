@@ -113,18 +113,18 @@ const CheckOut = () => {
             w="100%"
             color={theme?'white':"white"}
             onClick={() =>{
-              toast({
-                title: 'Payment Successfull',
-                description: "Your order has been placed",
-                status: 'success',
-                duration: 9000,
-                isClosable: true,
+              // toast({
+              //   title: 'Payment Successfull',
+              //   description: "Your order has been placed",
+              //   status: 'success',
+              //   duration: 9000,
+              //   isClosable: true,
                
-              })
+              // })
               setTimeout(()=>{
-                navigate("/")
+                navigate("/orderdetail")
                 setBag([])
-            },3000)
+            },2000)
             
             } 
              
