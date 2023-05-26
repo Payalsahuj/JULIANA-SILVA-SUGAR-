@@ -142,7 +142,7 @@ export default class MultipleItems extends Component{
               </div>
             </div>
           </div><div style={{display:'flex',padding:'10px 0px'}}>
-          <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FDouble-Date-Extreme-Volume-Mascara-Powered-by-Images-1025x1400-1.jpg%3Fv%3D1636386431&w=256&q=75" alt="" /></div>
+          <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_ef579f2e-602e-4d2f-bed2-bf0efdf4f184.jpg%3Fv%3D1644325813&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
               <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Double Date Extreme Volume Mascara Duo-01 Black Jack</p>
               <p>Unique shade</p>
@@ -152,7 +152,7 @@ export default class MultipleItems extends Component{
               </div>
             </div>
           </div><div style={{display:'flex',padding:'10px 0px'}}>
-          <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_9909d205-c5f9-476d-9903-c4beffbfebb7.jpg%3Fv%3D1637068160&w=256&q=75" alt="" /></div>
+          <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FAirKissPowderPoweredByImagesArtboard1.jpg%3Fv%3D1644813116&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
               <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Arch Arrival Brown Pen set</p>
               <p>2 shades</p>
@@ -175,7 +175,7 @@ export default class MultipleItems extends Component{
           </div>
 
           <div style={{display:'flex',padding:'10px 0px'}}>
-          <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F424092031-1.jpg%3Fv%3D1661529396&w=256&q=75" alt="" /></div>
+          <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2Fsugar-cosmetics-lipping-on-the-edge-lip-liner-01-taffeta-terracotta-13278188568659.jpg%3Fv%3D1619109027&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
               <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Wingman Waterproof Microliner</p>
               <p>14 shades</p>
@@ -187,7 +187,7 @@ export default class MultipleItems extends Component{
           </div>
 
           <div style={{display:'flex',padding:'10px 0px'}}>
-          <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F382512089-mettle-priming-balm-01.jpg%3Fv%3D1648654861&w=256&q=75" alt="" /></div>
+          <div style={{padding:'10px 20px',backgroundColor:'white',marginLeft:'15px',marginRight:'15px', borderRadius:'10px 10px 0px 0px'}} ><img style={{borderRadius:'7px'}} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2Fsugar-cosmetics-mettle-satin-lipstick-01-sophie-bright-fuchsia-pink-fuchsia-13706258088019.jpg%3Fv%3D1619116113&w=256&q=75" alt="" /></div>
             <div style={{backgroundColor:'white',padding:'15px 0px',marginLeft:'15px',marginRight:'15px',borderRadius:'0px 0px 10px 10px'}} >
               <p style={{display:'inline-block',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'23ch'}}>Counter De force face Palette</p>
               <p>3 shades</p>
