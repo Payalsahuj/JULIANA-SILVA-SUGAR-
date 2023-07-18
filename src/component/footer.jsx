@@ -95,7 +95,7 @@ function Footer(){
                     </div>
                    </div>
                    <hr></hr>
-                   <div style={{color:theme?'white':'black',background:theme?'black':'#E1BEE7',padding:'20px 0px'}}><a href="./">Copyright © 2023 SUGAR Cosmetics. All rights reserved.</a></div>
+                   <div style={{color:theme?'white':'black',background:theme?'black':'#E1BEE7',padding:'20px 0px'}}><a href="./">Copyright © 2023 JULIANA SILVA Cosmetics. All rights reserved.</a></div>
                    </>
 }
 

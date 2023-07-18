@@ -1,15 +1,18 @@
 import { Route,Routes } from "react-router-dom"
-import Landpage from "../component/landpage"
-import Bag from "../component/Bag"
+
+import Bag from "../Pages/Bag"
 import Admin from "../component/admin"
 import Signup from "../component/Signup"
 import Signin from "../component/Signin"
 import Wishlist from "../component/wishlist"
-import Product from "../component/product"
+
 import Singlepage from "../component/singlepage"
 import CheckOut from "../component/Address"
 import PrivateRoute from "../authcontext/Privateroute"
 import Orderdetail from "../component/orderdetail"
+import Landpage from "../Pages/landpage"
+import Product from "../Pages/product"
+
 function Allrouter(){
     
     return (

@@ -52,8 +52,8 @@ import {
   import {Authcontext} from "../authcontext/authcontext"
   import { useContext } from 'react';
   import { useNavigate, Link as Baglink} from "react-router-dom";
-  import Signup from "../component/Signup.jsx"
-  import Signin from "../component/Signin.jsx"
+  import Signup from "./Signup.jsx"
+  import Signin from "./Signin.jsx"
   import {  Link as LIPSlink} from "react-router-dom";
   function Navbar(){
     return (<WithSubnavigation />)

@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from 'react'
 
-import "../component/Bag.css";
+import "../modulecss/Bag.css";
 import { Link } from 'react-router-dom';
 import { Heading } from '@chakra-ui/react';
 import { Authcontext } from "../authcontext/authcontext"

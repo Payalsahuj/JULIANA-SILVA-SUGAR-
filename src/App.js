@@ -1,10 +1,11 @@
-import Navbar from './routing/navbar';
+import Navbar from './component/navbar';
 import Allrouter from './routing/allrouters';
 import './App.css';
-import Bottomnav from './routing/bottomnav'
+import Bottomnav from './component/bottomnav'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import Footer from './routing/footer';
+import Footer from './component/footer';
+
 function App() {
   return (
     <div className="App">
