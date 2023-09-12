@@ -23,7 +23,7 @@ import lightqual from "../Image/lightqual.png"
 import darkreturn from "../Image/darkreturn.png"
 import lightreturn from "../Image/lightreturn.png"
 import wish from '../Image/wish.png'
-
+import "../modulecss/single.css"
 function getdata(id){
     return fetch(`https://expensive-flannel-shirt-calf.cyclic.app/lipstick/${id}`)
     .then((res)=>res.json())
@@ -104,7 +104,7 @@ function Singlepage() {
         
     }
 
-    return <div style={{ backgroundColor: theme ? 'black' : '#ECEFF1', padding: '25px 0px' }}>
+    return <div style={{ backgroundColor: theme ? 'black' : '#ECEFF1', padding: '13% 0% 5% 0%' }}>
         <div style={{ margin: 'auto', width: '95%' }}><div style={{ display: 'flex', padding: '10px 20px', border: theme ? '1px solid #E1F5FE' : '', boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px', borderRadius: '10px', color: theme ? 'white' : 'black', backgroundColor: theme ? 'black' : "#E1BEE7" }}><h1>Home</h1><b style={{ padding: '0px 10px' }}>{" > "}</b><h1>LIPS</h1><b style={{ padding: '0px 10px' }}>{" > "}</b><h1><b> {data.name}</b></h1></div></div>
         <div style={{ display: "flex", width: '95%',padding:'10px 15px',borderRadius:'10px', margin: 'auto', marginTop: '25px',boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px' }}>
             {onload&&data.image1!==null?<Onloadimg data={data[`image1`]}/>:<Onclickimg data={data[`image${imageid}`]}/>}
@@ -118,7 +118,7 @@ function Singlepage() {
                 </div>
                 
                 <div style={{ marginTop: '20px', padding: '0px 10px' }}>Shades</div>
-                <div style={{display:"grid",gridTemplateColumns:'repeat(6,1fr)',gap:'25px',padding:'10px 10px',margin:'auto'}}>{shadedata.map((item,index)=> <div key={index} style={{width:'60px' ,height:'50px', background:`${item}`,borderRadius:'7px',boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px'}} id={index} onClick={(e)=>handelshade(e)}></div>)}</div>
+                <div style={{display:"grid",gridTemplateColumns:'repeat(6,1fr)',gap:'25px',padding:'10px 10px',margin:'auto'}}>{shadedata.map((item,index)=> <div key={index} class="shade" style={{width:'60px' ,height:'50px', background:`${item}`,borderRadius:'7px',boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px'}} id={index} onClick={(e)=>handelshade(e)}></div>)}</div>
                 <div style={{ marginTop: '20px', padding: '10px 20px', backgroundColor:theme?'black':'white', border:theme?'1px solid white':'',borderRadius: '10px',boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px' }}>
                     <h1>AVAILABLE OFFERS!!</h1>
                     <div>

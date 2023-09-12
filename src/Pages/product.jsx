@@ -285,7 +285,7 @@ function Product() {
   
 
   return (
-    <div style={{ backgroundColor: theme ? 'black' : '#ECEFF1' }}>
+    <div style={{ backgroundColor: theme ? 'black' : '#ECEFF1' ,paddingTop:'13%'}}>
       <div><img style={{ display: 'block', height: '300px', width: '100%' }} src="https://sugar-mobile-application.s3.amazonaws.com/collection-web-banner/Lips.jpg" alt="" />
         <div style={{ margin: 'auto', padding: '0px 30px' }}><div style={{ display: 'flex', padding: '10px 20px', border: theme ? '1px solid #E1F5FE' : '', boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px', margin: '20px 0px', borderRadius: '10px', color: theme ? 'white' : 'black', backgroundColor: theme ? 'black' : "#E1BEE7" }}><h1>Home</h1><b style={{ padding: '0px 10px' }}>{" > "}</b><h1><b>LIPS</b></h1></div></div>
       </div>

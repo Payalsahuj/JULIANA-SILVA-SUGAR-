@@ -26,9 +26,9 @@ function Bag() {
   },);
 
   return (
-    <article style={{backgroundColor:theme?'black':'#ECEFF1',color:theme?'white':'black'}}>
+    <article style={{backgroundColor:theme?'black':'#ECEFF1',color:theme?'white':'black',paddingTop:'17%'}}>
 
-      <Heading className='bagheading' color={theme?'black':'black'} >JULIANA SILVA BAG</Heading>
+    
       <div style={{ width: '70%', margin: 'auto' ,marginTop:'50px'}}>
         {bag.map((item) => (
           <div className="cart_box" key={item.id}>

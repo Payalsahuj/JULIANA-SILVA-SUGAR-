@@ -68,7 +68,7 @@ import {
     let {theme}=value
    
     return (
-      <Box  position={"relative"} border={theme?'1px solid white':'1px solid pink'}>
+      <Box  position={"fixed"} zIndex={'2'} top={'0%'} width={'100%'} border={theme?'1px solid white':'1px solid pink'}>
         
         <Uppernav/>
          
@@ -174,7 +174,7 @@ import {
           
           align={'center'}>
             <Box>
-               <button onClick={handellogo}> <Image src={theme?darklogo:v} w={{base:'90px',md:'100px', lg:'130px'}} h={{base:'50px',md:'70px', lg:'90px'}} alt='logo' /></button>
+               <button onClick={handellogo}> <Image src={theme?darklogo:v} w={{base:'90px',md:'100px', lg:'115px'}} h={{base:'50px',md:'70px', lg:'75px'}} alt='logo' /></button>
             </Box>
             <Box  w="40%">
             <Flex border={theme?'1px solid white':'2px solid white'}  display={{base:'none',md:'flex', lg:'flex'}} borderRadius="14px" padding="5px 10px" color={theme?'white':'black'} >
@@ -455,17 +455,17 @@ import {
         label: 'SKIN CARE',
         children: [
           {
-            label: 'MASKS & SERUMS',
+            label: 'SERUMS',
             subLabel: ['MASKS','SERUMS'],
             href: '#',
           },
           {
-            label: 'MOISTURRIZERS & SUNSCREENS',
+            label: 'MOISTURRIZERS',
             subLabel: ['MOISTURIZERS','SUNSCREENS'],
             href: '#',
           },
           {
-            label:'MISTS & HYDRATING STICKS',
+            label:'MISTS',
             subLabel:['FACE MISTS','COOLING STICKS'],
             href:'#',
           }

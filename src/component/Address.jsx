@@ -30,7 +30,7 @@ const CheckOut = () => {
   
 
   return (
-    <Box style={{margin:'auto',padingTop:'50px',backgroundColor:theme?'black':'#ECEFF1',padding:'20px 20px'}}>
+    <Box style={{margin:'auto',padingTop:'50px',backgroundColor:theme?'black':'#ECEFF1',padding:'15% 20px 6% 20px'}}>
        <Box mb={10}
         p={4}
         boxShadow= " rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px"

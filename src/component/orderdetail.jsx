@@ -84,7 +84,7 @@ function Orderdetail() {
             },2000)
     }
     return (
-        <div width='100%' style={{ backgroundColor: theme ? 'black' : '#ECEFF1', color: theme ? 'white' : 'black' }} >
+        <div width='100%' style={{ backgroundColor: theme ? 'black' : '#ECEFF1', color: theme ? 'white' : 'black',paddingTop:'13%',paddingBottom:'3%' }} >
             <div style={{ display: 'flex', justifyContent: 'space-between', width: '93%', margin: 'auto',boxShadow: 'rgba(0, 0, 0, 0.1) 0px 4px 12px', padding: '40px 10px', gap: '35px' }}>
                 <div style={{  width: '50%', border: theme?'1px solid white':'' ,borderRadius:'10px',paddingTop:'20px' }}>
                     <h1 style={{fontSize:'30px'}}>Order details</h1>

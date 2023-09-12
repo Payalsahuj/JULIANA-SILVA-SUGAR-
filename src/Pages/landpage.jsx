@@ -196,7 +196,7 @@ function Landpage() {
          "price": 199,
       },
       {
-         "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2Fsugar-cosmetics-matte-as-hell-crayon-lipstick-minis-set-28270316945491.jpg%3Fv%3D1675401557&w=256&q=75",
+         "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2F505110577-monsoon-makeup-kit-wbg-images_12.jpg%3Fv%3D1688227357&w=256&q=75",
          "title": 'Matte as Hell Crayon Lipstick',
          "shades": '',
          "price": 899,
@@ -299,7 +299,7 @@ function Landpage() {
 
    return (
       <>
-         <DIV style={{ padding: '30px 30px', backgroundColor: theme ? 'black' : '#ECEFF1', color: theme ? 'black' : '' }}>
+         <DIV style={{ padding: '15% 2.5% 2.5% 2.5%', backgroundColor: theme ? 'black' : '#ECEFF1', color: theme ? 'black' : '' }}>
 
 
             <div>
@@ -307,75 +307,95 @@ function Landpage() {
             </div>
 
 
-            <div style={{ boxShadow: ' rgba(255, 255, 255, 0.55) 0px 5px 15px', backgroundColor: "#1A237E", padding: '40px 0px', marginTop: '60px' }}>
+            <div style={{ backgroundColor: theme ? '#1A237E':"#ECEFF1", padding: '40px 0px', marginTop: '60px',borderRadius:'15px' }}>
                < MultipleItems argument={fisrtmultiple} />
             </div>
 
 
-            <div style={{ marginTop: '60px', borderRadius: '9px' }}>
-               <h1 style={{ textAlign: 'center', fontSize: '30px', color: theme ? 'white' : 'black' }}><b>--Hotel Details--</b></h1>
+            <div style={{ marginTop: '20px', borderRadius: '9px' }}>
+               
+               <br/>
                <div >
                   <Multiple argument={multipleon}/>
                </div>
             </div>
 
-
-            <div style={{ backgroundColor: "#1A237E", padding: '30px 0px', marginTop: '60px' }}>
-               <h1 style={{ textAlign: 'center', fontSize: '30px', color: theme ? 'white' : 'white' }}><b>--Just In--</b></h1>
+<br/>
+            <div style={{ backgroundColor: theme ? '#1A237E':"#ECEFF1", padding: '20px 0px', marginTop: '20px',borderRadius:'15px' }}>
+               <h1 style={{ textAlign: 'center', fontSize: '30px', color: theme ? 'white' : 'black' }}><b> Just In </b></h1>
+               <br/>
                < MultipleItems argument={secondmultiple} />
             </div>
 
 
             <div style={{ marginTop: '20px', padding: '0px 30px' }}>
-               <h1 style={{ textAlign: 'center', fontSize: '30px', color: theme ? 'white' : 'black' }}><b>--TIPSY LIPS SCRUB + BALM DUO--</b></h1>
+               <br/>
+
+               <h1 style={{ textAlign: 'center', fontSize: '30px', color: theme ? 'white' : 'black' }}><b>TIPSY LIPS SCRUB + BALM DUO</b></h1>
+               <br/>
                <div >
                   <img style={{ borderRadius: '7px', display: 'block', height: '490px', width: '100%' }} src="https://in.sugarcosmetics.com/_next/image?url=https://d32baadbbpueqt.cloudfront.net/Homepage/0533d215-072d-46a6-a126-656aa10580fb.jpg&w=1920&q=75" alt="" />
                </div>
             </div>
 
-
+<br/>
             <div style={{ marginTop: '20px' }}>
-        <h1 style={{textAlign:'center',fontSize:'30px', color: theme ? 'white' : 'black' }}><b>--TOP PICKS OF THE WEEK--</b></h1>
+        <h1 style={{textAlign:'center',fontSize:'30px', color: theme ? 'white' : 'black' }}><b>TOP PICKS OF THE WEEK</b></h1>
+        <br/>
         <Multiple argument={multipletw}/>
             </div>
 
 
-            <div style={{ backgroundColor: "#1A237E", padding: '30px 0px', marginTop: '60px' }}>
-               <h1 style={{ textAlign: 'center', fontSize: '30px', color: 'white' }}><b>BUY NOW PAY LATER</b></h1>
+            <div style={{ backgroundColor: theme ? '#1A237E':"#ECEFF1", padding: '20px 0px', marginTop: '60px',borderRadius:'15px' }}>
+               <h1 style={{ textAlign: 'center', fontSize: '30px', color:theme? 'white':'black' }}><b>BUY NOW PAY LATER</b></h1>
+               <br/>
                < MultipleItems argument={thirdmultiple} />
             </div>
-
-            <div style={{ backgroundColor: "#1A237E", padding: '30px 0px', marginTop: '60px' }}>
-               <h1 style={{ textAlign: 'center', fontSize: '30px', color: 'white' }}><b>GIFTING</b></h1>
+            <br/>
+            <div style={{ backgroundColor: theme ? '#1A237E':"#ECEFF1", padding: '20px 0px', marginTop: '20px',borderRadius:'15px' }}>
+               <h1 style={{ textAlign: 'center', fontSize: '30px', color: theme?'white':'black' }}><b>GIFTING</b></h1>
+               <br/>
                < MultipleItems argument={fourthmultiple} />
             </div>
 
 
             <div>
-               <h1 style={{ textAlign: 'center', fontSize: '30px', marginTop: '30px', color: theme ? 'white' : 'black' }}><b>--REFER YOUR FRIENDS--</b></h1>
+               <br/>
+               <h1 style={{ textAlign: 'center', fontSize: '30px', marginTop: '30px', color: theme ? 'white' : 'black' }}><b>REFER YOUR FRIENDS</b></h1>
+               <br/>
                <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F8638d096-d168-404e-9b83-56967625b5e6.jpg&w=1920&q=75" alt="" />
             </div>
-
-
-            <div style={{ backgroundColor: "#1A237E", paddingBottom: '25px', marginTop: '20px' }}>
-               <h1 style={{ textAlign: 'center', marginTop: '60px', fontSize: '30px', color: theme ? 'white' : 'white' }}><b>--SUPER SAVERS--</b></h1>
+            
+            <br/>
+            <div >
+               
+               <h1 style={{ textAlign: 'center', paddingTop: '10px', fontSize: '30px', color: theme ? 'white' : 'black' }}><b>SUPER SAVERS</b></h1>
+               <br/>
                < MultipleItems argument={fithmultiple} />
             </div>
 
 
             <div style={{ marginTop: '20px' }}>
-               <h1 style={{ textAlign: 'center', marginTop: '60px', fontSize: '30px', color: theme ? 'white' : 'black' }}><b>--NEWLY LAUNCHED--</b></h1>
+               <h1 style={{ textAlign: 'center', marginTop: '60px', fontSize: '30px', color: theme ? 'white' : 'black' }}><b>NEWLY LAUNCHED</b></h1>
+               <br/>
                <SimpleSlider argument={secondsimpleslide} />
             </div>
 
-
+            <br/>
             <div style={{ marginTop: '45px' }}>
-               <h1 style={{ textAlign: 'center', fontSize: '30px', color: theme ? 'white' : 'black' }}><b>-- THIS OR THAT--</b></h1>
+
+               <br/>
                <div style={{ display: 'flex', gap: '30px', marginTop: '10px' }}>
-                  <div style={{ border: theme ? '4px solid blue' : "", borderRadius: '9px' }}><img style={{ borderRadius: '9px' }} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F50d277c9-c605-4c1a-b9da-ae952189292d.jpg&w=1920&q=75" alt="" /></div>
-                  <div style={{ border: theme ? '4px solid blue' : '', borderRadius: '9px' }}><img style={{ borderRadius: '9px' }} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F597e2c6d-4144-497c-90c2-5d09de375506.jpg&w=1920&q=75" alt="" /></div>
+                  <div style={{ border: theme ? '1px solid blue' : "", borderRadius: '9px' }}><img style={{ borderRadius: '9px' }} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F50d277c9-c605-4c1a-b9da-ae952189292d.jpg&w=1920&q=75" alt="" /></div>
+                  <div style={{ border: theme ? '1px solid blue' : '', borderRadius: '9px' }}><img style={{ borderRadius: '9px' }} src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F597e2c6d-4144-497c-90c2-5d09de375506.jpg&w=1920&q=75" alt="" /></div>
                </div>
-               <div style={{ marginTop: '50px', marginBottom: '50px', borderRadius: '9px' }}><h1 style={{ textAlign: 'center', fontSize: '30px', color: theme ? 'white' : 'black' }}><b>--Explore--</b></h1><div><Multiplelast /></div></div>
+               <br/>
+               <br/>
+               <br/>
+               <div><Multiplelast /></div>
+               <br/>
+               <br/>
+               
             </div>
 
 
