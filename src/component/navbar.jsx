@@ -68,7 +68,7 @@ import {
     let {theme}=value
    
     return (
-      <Box  position={"fixed"} zIndex={'2'} top={'0%'} width={'100%'} border={theme?'1px solid white':'1px solid pink'}>
+      <Box  position={"fixed"} zIndex={'2'} top={'0%'} width={'100%'} borderBottom={theme?'1px solid white':'1px solid pink'}>
         
         <Uppernav/>
          
@@ -163,21 +163,22 @@ import {
       <Flex
       bg={theme?'black':'brand.100'} color={theme?'white':'brand.100'}
           // bg='brand.100'
-          // color={useColorModeValue('gray.600', 'white')}
+          color={useColorModeValue('gray.600', 'white')}
           minH={'60px'}
           py={{ base: 2 }}
           px={{ base: 4 }}
           borderBottom={1}
+          borderTop={0}
           borderStyle={'solid'}
           borderColor={useColorModeValue('gray.200', 'gray.900')}
           justifyContent="space-around"
           
           align={'center'}>
             <Box>
-               <button onClick={handellogo}> <Image src={theme?darklogo:v} w={{base:'90px',md:'100px', lg:'115px'}} h={{base:'50px',md:'70px', lg:'75px'}} alt='logo' /></button>
+               <button onClick={handellogo}> <Image src={theme?darklogo:v} w={{base:'73px',md:'95px', lg:'110px'}} h={{base:'45px',md:'65px', lg:'70px'}} alt='logo' /></button>
             </Box>
             <Box  w="40%">
-            <Flex border={theme?'1px solid white':'2px solid white'}  display={{base:'none',md:'flex', lg:'flex'}} borderRadius="14px" padding="5px 10px" color={theme?'white':'black'} >
+            <Flex   display={{base:'none',md:'flex', lg:'flex'}} borderRadius="14px" padding="5px 10px" color={theme?'white':'black'} >
             <Input placeholder='Search products' focusBorderColor='brand.100' style={{ color:'black'}} border={"none"} size='sm' />< Image src={theme?darksearch:lightsearch} w="25px" h='24px' paddingTop={'5px'} paddingRight='5px' alt=''/>Search</Flex>
             </Box>
             <Button display={{base:'flex',md:'none', lg:'none'}} onClick={onOpen} bg={theme?'black':'brand.100'}>< Image src={theme?darksearch:lightsearch} w="25px" alt=''/><Text pl='7px' color={theme?'white':'black'}>Search</Text></Button>

@@ -22,11 +22,11 @@ function Bottomnav(){
        navigate('/')     
     }
     return <Box display={{base:'flex' ,md:'none', lg:'none'}} >
-    <div style={{ border: theme?'1px solid blue':'1px solid pink',backgroundColor:theme?'black':'#E1BEE7',
+    <div style={{ borderTop: theme?'1px solid blue':'1px solid pink',backgroundColor:theme?'black':'#E1BEE7',
         height: '70px',
         width: '100%',
         position:'fixed',
-        top: '91vh',
+        bottom:'0%',
         zIndex:'100',
         display:'flex',alignItems:'end',color:theme?'white':'black'}}>
             <div  style={{display:'flex', justifyContent:'space-evenly',alignItems:'center',width:'100%'}}>
